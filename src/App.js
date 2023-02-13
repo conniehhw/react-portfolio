@@ -12,6 +12,8 @@ function App() { //A functional Component (React) --> returning JSX (using html 
 
   const name = 'Connie Wong'; // how to leverage jSccript expressions? how to leverage 'name' into JSX return below?
                               // for example line 20 where tx is Connie- to render JS into JSX, syntax notation is { }
+                              // see Math js example lie 23
+  const hasCat = true;        // using js tiernary operators                     
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +21,7 @@ function App() { //A functional Component (React) --> returning JSX (using html 
         <p>
          Hello World, this is my portfolio. My name is {name} Connie. 
         </p>
+        <p>I am {hasCat ? Math.floor(Math.random() * 100 + 50) :99} years old</p>
         <p id='some-tx-tag'>Some Text Here demo CSS
         </p>
         <ProjectsComponent />
