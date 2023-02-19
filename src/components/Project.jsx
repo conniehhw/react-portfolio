@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Project.css";
+// this to be 'portfolio container which renders based condition)
 
 //component - a function declaration or function expression
 
