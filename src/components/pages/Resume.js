@@ -1,11 +1,14 @@
 import React from "react";
 
-export default function Resume() {
+const Resume = () => {
   return (
     <div>
       <h1>Resume</h1>
       <p>
-        Download my <a href="#">resume</a>
+        Download my
+        <a href="https://google.ca" target="_blank" rel="noopener noreferrer">
+          resume
+        </a>
       </p>
 
       <h2>Front-end Proficiencies</h2>
@@ -46,4 +49,6 @@ export default function Resume() {
       </p>
     </div>
   );
-}
+};
+
+export default Resume;

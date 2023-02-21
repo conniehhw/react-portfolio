@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import NavTabs from "./NavTabs";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import NavTabs from "./NavTabs";
 
-export default function PortfolioContainer() {
+const PortfolioContainer = () => {
   const [currentPage, setCurrentPage] = useState("Home");
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
@@ -32,4 +32,6 @@ export default function PortfolioContainer() {
       {renderPage()}
     </div>
   );
-}
+};
+
+export default PortfolioContainer;
