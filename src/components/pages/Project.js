@@ -5,7 +5,7 @@ const styles = {
     padding: 20,
   },
   projectCard: {
-    border: "1px solid black",
+    border: "solid 1px #8c92ac",
   },
   container: {
     display: "flex",

@@ -5,7 +5,6 @@ import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import NavTabs from "./NavTabs";
 import Navigation from "./Navigation";
-import Header from "./Header";
 
 const PortfolioContainer = () => {
   const [currentPage, setCurrentPage] = useState("About");

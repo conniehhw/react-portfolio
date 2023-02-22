@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import './style.css';
+// import "./style.css";
 
 const styles = {
   card: {
@@ -78,7 +78,6 @@ function ContactForm() {
           // placeholder="Message"
         />
 
-        <div></div>
         <button type="button" onClick={handleFormSubmit}>
           Submit
         </button>
