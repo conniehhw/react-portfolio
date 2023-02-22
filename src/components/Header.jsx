@@ -1,10 +1,11 @@
 import React from "react";
-import NavTabs from "./NavTabs";
+import "../styles/Header.css";
+
+// import Navigation from "./Navigation";
 
 const Header = () => (
-  <div>
-    <p>This is a header</p>
-    <NavTabs />
+  <div class="header">
+    <p class="a">This is a header</p>
   </div>
 );
 

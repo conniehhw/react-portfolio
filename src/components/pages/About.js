@@ -1,9 +1,15 @@
 import React from "react";
 
+const styles = {
+  card: {
+    padding: 20,
+  },
+};
+
 const About = () => {
   return (
-    <div>
-      <h1>About Me</h1>
+    <div style={styles.card}>
+      <h2>About Me</h2>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed

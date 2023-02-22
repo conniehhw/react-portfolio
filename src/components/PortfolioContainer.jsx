@@ -4,6 +4,8 @@ import Project from "./pages/Project";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import NavTabs from "./NavTabs";
+import Navigation from "./Navigation";
+import Header from "./Header";
 
 const PortfolioContainer = () => {
   const [currentPage, setCurrentPage] = useState("About");
@@ -13,7 +15,7 @@ const PortfolioContainer = () => {
     if (currentPage === "About") {
       return <About />;
     }
-    if (currentPage === "Portfolio") {
+    if (currentPage === "Project") {
       return <Project />;
     }
     if (currentPage === "Contact") {
@@ -26,12 +28,22 @@ const PortfolioContainer = () => {
 
   return (
     <div>
-      {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
+      <Navigation
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
       {renderPage()}
+      <Header />
     </div>
   );
 };
+
+//       {/* We are passing the currentPage from state and the function to update it */}
+//       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+//       {/* Here we are calling the renderPage method which will return a component  */}
+//       {renderPage()}
+//     </div>
+//   );
+// };
 
 export default PortfolioContainer;

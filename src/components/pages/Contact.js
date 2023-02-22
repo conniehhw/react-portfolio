@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 // import './style.css';
 
+const styles = {
+  card: {
+    padding: 20,
+  },
+};
+
 function ContactForm() {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
@@ -44,8 +50,8 @@ function ContactForm() {
   };
 
   return (
-    <div>
-      <h1>Contact</h1>
+    <div style={styles.card}>
+      <h2>Contact</h2>
       <p>Name: </p>
       <form className="form">
         <input
@@ -71,6 +77,8 @@ function ContactForm() {
           type="text"
           // placeholder="Message"
         />
+
+        <div></div>
         <button type="button" onClick={handleFormSubmit}>
           Submit
         </button>
