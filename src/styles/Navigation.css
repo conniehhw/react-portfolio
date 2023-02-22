@@ -1,8 +1,17 @@
-.topnav-right {
-  float: right;
+.nav {
+  /* float: right; */
+  /* text-align: right; */
   background: yellow;
-  border: solid 1px blue;
+  border: solid 1px green;
+  display: flex;
+  width: 100%;
+  justify-content: end;
 }
+
+.nav-item {
+  padding: 10px;
+}
+
 /* 
 .topnav-right {
   float: right;

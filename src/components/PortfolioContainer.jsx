@@ -33,7 +33,6 @@ const PortfolioContainer = () => {
         handlePageChange={handlePageChange}
       />
       {renderPage()}
-      <Header />
     </div>
   );
 };
