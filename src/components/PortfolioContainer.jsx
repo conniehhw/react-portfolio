@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import About from "./pages/About";
-import Project from "./pages/Project";
-import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+import About from "../pages/About";
+import Project from "../pages/Project";
+import Resume from "../pages/Resume";
+import Contact from "../pages/Contact";
 import NavTabs from "./NavTabs";
 import Navigation from "./Navigation";
 
