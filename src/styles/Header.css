@@ -3,8 +3,9 @@
   background-color: #de3c4b;
   color: white;
   border: solid 1px transparent;
+  padding-left: 5px;
 }
 
-.a {
+.b {
   text-align: left;
 }

@@ -1,8 +1,13 @@
 import React from "react";
+import aboutLogo from "../images/aboutme.jpg";
 
 const styles = {
   card: {
     padding: 20,
+  },
+  img: {
+    width: 50,
+    height: 50,
   },
 };
 
@@ -10,6 +15,7 @@ const About = () => {
   return (
     <div style={styles.card}>
       <h2>About Me</h2>
+      <img style={styles.img} src={aboutLogo} alt="about me logo" />
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
