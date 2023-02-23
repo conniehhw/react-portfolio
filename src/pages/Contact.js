@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "./style.css";
 
 const styles = {
   card: {
@@ -7,20 +6,18 @@ const styles = {
   },
 };
 
+// sets up contact us form to be empty string upon load useState("")
+
 function ContactForm() {
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // // when the state changes run this callback
-  // useEffect() => {
-
-  // }
-
   const handleInputChange = (e) => {
-    // getting the action of keystroke out of form to trigger change?
-    const { name, value } = e.target;
+    const { name, value } = e.target; // function to test if keys pressed are captured
     console.log("name", firstName);
+    console.log("email", email);
+    console.log("message", message);
     console.log("value", e.target.value);
 
     switch (name) {
@@ -33,17 +30,16 @@ function ContactForm() {
     }
   };
 
+  // a function is needed to check if user clicks outside the input fields:
   // if (firstName && Email & Message === "") {
   //   return <div>This field is required</div>
   //   }
-  //    return <div>Your message has been sent</div>
-  // };
 
-  // Create conditional upon handleFormSubmit, if firstName, Email & Message is empty, return statement
+  // when submit button is handled, alert msg to notifer user their msg has been sent & clears the form
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    alert(`Hello ${firstName} your message has been sent`); // alert user msg has been sent and clear the inputs
+    alert(`Hello ${firstName} your message has been sent`);
     setFirstName("");
     setEmail("");
     setMessage("");
@@ -57,13 +53,13 @@ function ContactForm() {
         <input
           value={firstName}
           name="name"
-          onChange={handleInputChange} // how to note
+          onChange={handleInputChange}
           type="text"
           // placeholder="Name"
         />
         <p>Email: </p>
         <input
-          // value={email}
+          value={email}
           name="email"
           onChange={handleInputChange}
           type="text"
@@ -71,9 +67,9 @@ function ContactForm() {
         />
         <p>Message: </p>
         <input
-          // value={message}
+          value={message}
           name="message"
-          //   onChange={handleInputChange}
+          onChange={handleInputChange}
           type="text"
           // placeholder="Message"
         />

@@ -3,9 +3,9 @@ import About from "../pages/About";
 import Project from "../pages/Project";
 import Resume from "../pages/Resume";
 import Contact from "../pages/Contact";
-import NavTabs from "./NavTabs";
 import Navigation from "./Navigation";
 
+// Setting up useState - when loads it defaults to the about page
 const PortfolioContainer = () => {
   const [currentPage, setCurrentPage] = useState("About");
 
@@ -35,13 +35,5 @@ const PortfolioContainer = () => {
     </div>
   );
 };
-
-//       {/* We are passing the currentPage from state and the function to update it */}
-//       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-//       {/* Here we are calling the renderPage method which will return a component  */}
-//       {renderPage()}
-//     </div>
-//   );
-// };
 
 export default PortfolioContainer;

@@ -1,10 +1,8 @@
 import React from "react";
 import "../styles/Header.css";
 
-// import Navigation from "./Navigation";
-
 const Header = () => (
-  <div class="header">
+  <div className="header">
     <p className="b">Connie</p>
   </div>
 );

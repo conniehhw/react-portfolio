@@ -4,15 +4,24 @@ const styles = {
   card: {
     padding: 20,
   },
+  resumeLink: {
+    color: "blue",
+  },
 };
 
+// include a link to download resume
 const Resume = () => {
   return (
     <div style={styles.card}>
       <h2>Resume</h2>
       <p>
         Download my
-        <a href="https://google.ca" target="_blank" rel="noopener noreferrer">
+        <a
+          style={styles.resumeLink}
+          href="https://google.ca"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           resume
         </a>
       </p>

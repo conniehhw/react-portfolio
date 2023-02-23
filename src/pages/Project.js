@@ -1,5 +1,7 @@
 import React from "react";
 
+// this renders the projects and links to the corresponding gitHub repository when the image is clicked
+// missing function where upon hover over each project image; user to see links to both the deployed applications and the corresponding GitHub repository
 
 const styles = {
   card: {
@@ -63,27 +65,45 @@ const ProjectCard = () => {
             height="150"
           ></img>
         </a>
-        <img
-          style={styles.projectCard}
-          src="note-taker.jpg"
-          alt="Note Taker"
-          width="200"
-          height="150"
-        ></img>
-        <img
-          style={styles.projectCard}
-          src="weather-dash.jpg"
-          alt="Note Taker"
-          width="200"
-          height="150"
-        ></img>
-        <img
-          style={styles.projectCard}
-          src="password-gen.jpg"
-          alt="Note Taker"
-          width="200"
-          height="150"
-        ></img>
+        <a
+          href="https://github.com/conniehhw/team-profile-generator"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            style={styles.projectCard}
+            src="team-pro-gen.jpg"
+            alt="Team Profile Gen"
+            width="200"
+            height="150"
+          ></img>
+        </a>
+        <a
+          href="https://github.com/Jon-Ledo/FullStack-My-Personal-Bookshelf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            style={styles.projectCard}
+            src="bookshelf.jpg"
+            alt="Collaboration Bookshelf"
+            width="200"
+            height="150"
+          ></img>
+        </a>
+        <a
+          href="https://github.com/bleachevil/Project1-Workout"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            style={styles.projectCard}
+            src="customfit.jpg"
+            alt="Collaboration CustomFit"
+            width="200"
+            height="150"
+          ></img>
+        </a>
       </div>
     </div>
   );

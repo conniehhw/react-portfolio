@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Navigation.css";
 
+// setting up event listener for which item on the nav is clicked
 const Navigation = ({ handlePageChange }) => {
   return (
     <div className="nav">
